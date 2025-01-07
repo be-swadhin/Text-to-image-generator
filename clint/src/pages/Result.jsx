@@ -76,7 +76,7 @@ const Result = () => {
           </button>
         </div>
       ) : (
-        <div className="flex flex-col sm:flex-row gap-6 mt-8 items-center">
+        <div className="flex flex-col sm:flex-row gap-10 mt-8 items-center">
           <button
             onClick={onGenerateAgainHandler}
             className="flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 hover:to-blue-500 px-8 py-4 rounded-full text-base sm:text-lg font-bold shadow-md hover:shadow-xl transition-transform transform hover:scale-105 duration-300 ease-in-out"
