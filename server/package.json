@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "",
   "license": "ISC",
@@ -24,5 +25,8 @@
     "nodemon": "^3.1.9",
     "razorpay": "^2.9.5",
     "vercel": "^39.2.5"
+  },
+  "devDependencies": {
+    "vite": "^6.2.2"
   }
 }

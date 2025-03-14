@@ -5,7 +5,7 @@ import connectDB from './config/mongodb.js';
 import userRouter from './routes/userRoutes.js';
 import imageRouter from './routes/imageRoutes.js';
 
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 5000
 const app = express();
 
 app.use(express.json());
@@ -15,5 +15,9 @@ await connectDB();
 app.use('/api/user', userRouter)
 app.use('/api/image', imageRouter)
 app.get('/', (req, res) => res.send('API Working'))
+
+if (process.env.NODE_ENV == 'production') {
+    app.use(express.static('client/build'));
+}
 
 app.listen(PORT, () => console.log("Server listening on port " + PORT));
