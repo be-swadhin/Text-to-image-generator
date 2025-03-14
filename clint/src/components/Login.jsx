@@ -23,6 +23,7 @@ const Login = () => {
               setUser(data.user)
               localStorage.setItem('token', data.token)
               setShowLogin(false)
+              toast.success('Login Successfully');
             }else{
               toast.error(data.message)
             }
@@ -34,6 +35,7 @@ const Login = () => {
               setUser(data.user)
               localStorage.setItem('token', data.token)
               setShowLogin(false)
+              toast.success('Account Created Successfully');
             }else{
               toast.error(data.message)
             }
