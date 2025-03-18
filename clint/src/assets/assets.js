@@ -14,6 +14,8 @@ import sample_img_6 from './sample_img_6.png'
 import profile_img_1 from './profile_img_1.jpg'
 import profile_img_2 from './profile_img_2.png'
 import profile_img_3 from './profile_img_3.png'
+import profile_img_4 from './profile_img_4.jpg'
+import profile_img_5 from './profile_img_5.jpg'
 import step_icon_1 from './step_icon_1.svg'
 import step_icon_2 from './step_icon_2.svg'
 import step_icon_3 from './step_icon_3.svg'
@@ -86,6 +88,20 @@ export const testimonialsData = [
         stars:5,
         text:`I've been using Genartify Text-to-Image Generator for over a year, especially for conceptual designs. Its straightforward interface and quick results make it a fantastic tool for visualizing ideas effortlessly.`
     },
+    {
+      image:profile_img_4,
+      name:'Sunami Swayamprava Mohanty',
+      role:' Frontend Developer',
+      stars: 4,
+      text: 'Genartify has been my favorite tool for creating images from text. It has helped me create visually appealing and unique designs for my clients.'
+    },
+    {
+      image:profile_img_5,
+      name:'Atul Anshuman Barik',
+      role:'Java Developer',
+      stars: 5,
+      text: 'Genartify has been a game-changer for my creative work. It has been a game-changer for my creative work. It has been a game-changer for my creative work.'
+    }
 ]
 
 export const plans = [

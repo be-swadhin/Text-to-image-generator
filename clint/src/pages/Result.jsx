@@ -15,20 +15,30 @@ const Result = () => {
 
   const onSubmitHandler = async (e) => {
     e.preventDefault();
-    setLoading(true);
 
-    if (input) {
-      const generatedImage = await generateImage(input);
-      if (generatedImage) {
-        setIsImageLoaded(true);
-        setImage(generatedImage);
-      }
+    if (!input.trim()) {
+      toast.error("Please enter a description before generating!", {
+        position: "bottom-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+      return;
+    }
+
+    setLoading(true);
+    const generatedImage = await generateImage(input);
+    if (generatedImage) {
+      setIsImageLoaded(true);
+      setImage(generatedImage);
     }
     setLoading(false);
   };
 
   const onDownloadHandler = (e) => {
-    e.preventDefault(); // Prevent the default form submission
+    e.preventDefault();
     const link = document.createElement('a');
     link.href = image;
     link.download = 'generated-image.png';
@@ -41,7 +51,6 @@ const Result = () => {
       closeOnClick: true,
       pauseOnHover: true,
       draggable: true,
-      progress: undefined,
     });
   };
 
@@ -75,7 +84,7 @@ const Result = () => {
       >
         <div>
           <div className="relative">
-            <img src={image} alt="" className="max-w-full sm:max-w-sm rounded" />
+            <img src={image} alt="Generated Preview" className="max-w-full sm:max-w-sm rounded" />
             <span
               className={`absolute bottom-0 left-0 h-1 bg-blue-500 ${
                 loading ? 'w-full transition-all duration-[10s]' : 'w-0'
@@ -110,7 +119,7 @@ const Result = () => {
               Generate Again
             </button>
             <button
-              onClick={onDownloadHandler} // Prevent form submission
+              onClick={onDownloadHandler}
               className="flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 hover:to-blue-500 px-8 py-4 rounded-full text-base sm:text-lg font-bold shadow-md hover:shadow-xl transition-transform transform hover:scale-105 duration-300 ease-in-out"
             >
               Download
