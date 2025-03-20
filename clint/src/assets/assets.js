@@ -69,38 +69,38 @@ export const stepsData = [
 export const testimonialsData = [
     {
         image:profile_img_1,
-        name:'Sambit Kumar Sahoo',
+        name:'Sambit Ku. Sahoo',
         role:'MERN Stack Developer',
         stars:5,
-        text:`I've been using Genartify for almost a year, mainly for generating creative visuals for my projects. Its ability to turn text prompts into stunning, unique images has been a game-changer for my creative work.`
+        text:`I've used Genartify for a year to generate stunning visuals for my projects—it's been a game-changer!`
     },
     {
         image:profile_img_2,
         name:'Ratikanta Pradhan',
         role:'Software Engineer',
         stars:4,
-        text:`Genartify has been my trusted tool for over a year, helping me create beautiful and customizable images just from text inputs. It's incredibly intuitive and perfect for bringing imaginative ideas to life.`
+        text:`I've trusted Genartify for over a year to create stunning, customizable images from text—intuitive and perfect for imagination!`
     },
     {
         image:profile_img_3,
         name:'Dharmaraj Pradhan',
         role:' Frontend Developer',
         stars:5,
-        text:`I've been using Genartify Text-to-Image Generator for over a year, especially for conceptual designs. Its straightforward interface and quick results make it a fantastic tool for visualizing ideas effortlessly.`
+        text:`I've used Genartify for over a year for conceptual designs—its simple interface and quick results make idea visualization effortless!`
     },
     {
       image:profile_img_4,
-      name:'Sunami Swayamprava Mohanty',
+      name:'Sunami Swayamprava',
       role:' Frontend Developer',
       stars: 4,
-      text: 'Genartify has been my favorite tool for creating images from text. It has helped me create visually appealing and unique designs for my clients.'
+      text: 'Genartify is my go-to for creating unique, visually appealing designs from text—perfect for my clients!'
     },
     {
       image:profile_img_5,
-      name:'Atul Anshuman Barik',
-      role:'Java Developer',
+      name:'Atul A. Barik',
+      role:'Python Developer',
       stars: 5,
-      text: 'Genartify has been a game-changer for my creative work. It has been a game-changer for my creative work. It has been a game-changer for my creative work.'
+      text: 'Genartify has been a game-changer for my creative work, helping me generate unique and stunning visuals effortlessly.'
     }
 ]
 
