@@ -17,55 +17,9 @@ const Testimonials = () => {
       </h1>
       <p className="text-gray-500 text-lg mb-12">What Our Users Are Saying</p>
 
-      {/* Testimonial Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-10 px-6">
-        {testimonialsData.slice(0, 3).map((testimonial, index) => (
-          <motion.div
-            key={index}
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 150 }}
-            className="relative bg-white/20 backdrop-blur-lg p-8 rounded-3xl shadow-xl border border-sky-500/30 w-full mx-auto cursor-pointer hover:shadow-2xl transition-all overflow-hidden"
-          >
-            {/* Floating Glow Effect */}
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-300/10 to-purple-300/10 rounded-3xl"></div>
-
-            <div className="flex flex-col items-center relative z-10">
-              {/* User Image */}
-              <img
-                src={testimonial.image}
-                className="w-16 h-16 rounded-full shadow-lg border-1 border-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-green-500 p-1"
-                alt="user"
-              />
-              <h2 className="text-2xl font-semibold mt-3 text-gray-800">
-                {testimonial.name}
-              </h2>
-              <p className="text-gray-500">{testimonial.role}</p>
-
-              {/* Star Ratings with Glow */}
-              <div className="flex my-4 space-x-1">
-                {Array(testimonial.stars)
-                  .fill()
-                  .map((_, i) => (
-                    <img
-                      key={i}
-                      src={assets.rating_star}
-                      className="w-5 h-5 text-red-500 drop-shadow-md animate-pulse"
-                      alt="star"
-                    />
-                  ))}
-              </div>
-
-              {/* Testimonial Text */}
-              <p className="text-center text-sm text-gray-700 leading-relaxed">
-                {testimonial.text}
-              </p>
-            </div>
-          </motion.div>
-        ))}
-      </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-10 px-6 mt-10">
-        {testimonialsData.slice(3, 5).map((testimonial, index) => (
+      {/* Testimonial Cards in One Row */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10 px-6">
+        {testimonialsData.map((testimonial, index) => (
           <motion.div
             key={index}
             whileHover={{ scale: 1.05 }}
