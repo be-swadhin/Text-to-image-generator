@@ -68,36 +68,36 @@ export const stepsData = [
 
 export const testimonialsData = [
     {
-        image:profile_img_1,
-        name:'Sambit Ku. Sahoo',
+        image:profile_pic_1,
+        name:'Swadhin Ku. Behera',
         role:'MERN Stack Developer',
-        stars:5,
+        stars:4,
         text:`I've used Genartify for a year to generate stunning visuals for my projects—it's been a game-changer!`
     },
     {
-        image:profile_img_2,
-        name:'Ratikanta Pradhan',
+        image:profile_pic_2,
+        name:'Rajesh Ku. Nayak',
         role:'Software Engineer',
-        stars:4,
+        stars:5,
         text:`I've trusted Genartify for over a year to create stunning, customizable images from text—intuitive and perfect for imagination!`
     },
     {
-        image:profile_img_3,
-        name:'Dharmaraj Pradhan',
+        image:profile_pic_3,
+        name:'Soumya R Swain',
         role:' Frontend Developer',
         stars:5,
         text:`I've used Genartify for over a year for conceptual designs—its simple interface and quick results make idea visualization effortless!`
     },
     {
-      image:profile_img_4,
-      name:'Sunami Swayamprava',
+      image:profile_pic_4,
+      name:'Harendra Das',
       role:' Frontend Developer',
       stars: 4,
       text: 'Genartify is my go-to for creating unique, visually appealing designs from text—perfect for my clients!'
     },
     {
-      image:profile_img_5,
-      name:'Atul A. Barik',
+      image:profile_pic_5,
+      name:'Abhishek Barik',
       role:'Python Developer',
       stars: 5,
       text: 'Genartify has been a game-changer for my creative work, helping me generate unique and stunning visuals effortlessly.'
