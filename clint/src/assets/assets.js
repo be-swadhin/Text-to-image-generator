@@ -11,11 +11,11 @@ import sample_img_3 from './sample_img_3.png'
 import sample_img_4 from './sample_img_4.png'
 import sample_img_5 from './sample_img_5.png'
 import sample_img_6 from './sample_img_6.png'
-import profile_img_1 from './profile_img_1.jpg'
-import profile_img_2 from './profile_img_2.png'
-import profile_img_3 from './profile_img_3.png'
-import profile_img_4 from './profile_img_4.jpg'
-import profile_img_5 from './profile_img_5.jpg'
+import profile_pic_1 from './profile_pic_1.jpg'
+import profile_pic_2 from './profile_pic_2.jpg'
+import profile_pic_3 from './profile_pic_3.jpg'
+import profile_pic_4 from './profile_pic_4.jpg'
+import profile_pic_5 from './profile_pic_5.jpg'
 import step_icon_1 from './step_icon_1.svg'
 import step_icon_2 from './step_icon_2.svg'
 import step_icon_3 from './step_icon_3.svg'
@@ -69,16 +69,16 @@ export const stepsData = [
 export const testimonialsData = [
     {
         image:profile_pic_1,
-        name:'Swadhin Ku. Behera',
+        name:'Swadhin Behera',
         role:'MERN Stack Developer',
-        stars:4,
+        stars:5,
         text:`I've used Genartify for a year to generate stunning visuals for my projects—it's been a game-changer!`
     },
     {
         image:profile_pic_2,
         name:'Rajesh Ku. Nayak',
         role:'Software Engineer',
-        stars:5,
+        stars:4,
         text:`I've trusted Genartify for over a year to create stunning, customizable images from text—intuitive and perfect for imagination!`
     },
     {
