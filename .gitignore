@@ -1,3 +1,5 @@
 .codegpt
 .env
 .codegpt
+package-lock.json
+yarn.lock
