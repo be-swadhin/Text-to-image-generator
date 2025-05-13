@@ -16,7 +16,6 @@ const Navbar = () => {
           className='w-24 sm:w-28 lg:w-32 shrink-0 transition-transform duration-300 hover:scale-110' 
         />
       </Link>
-
       <div>
         {user ? (
           <div className='flex items-center gap-2 sm:gap-3'>
